@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="" />
+    <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MaximumPointsYouCanObtainfromCards$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MaximumPointsYouCanObtainfromCards$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/test1.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,44 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/CountingBits.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BinaryTreeInorderTraversal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BinaryTreeLevelOrderTraversal.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/N과M1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/EvaluateDivision.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -92,6 +65,8 @@
         <option value="$PROJECT_DIR$/src/com/company/CountingBits.java" />
         <option value="$PROJECT_DIR$/src/com/company/BinaryTreeInorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/company/BinaryTreeLevelOrderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AdditiveNumber.java" />
+        <option value="$PROJECT_DIR$/src/com/company/N과M1.java" />
       </list>
     </option>
   </component>
@@ -151,13 +126,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test1">
+  <component name="RunManager" selected="Application.N과M1">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="leetcode" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N과M1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.N과M1" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,9 +166,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.test1" />
+      <item itemvalue="Application.N과M1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N과M1" />
         <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
@@ -195,23 +185,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608560906756</updated>
-      <workItem from="1608560910584" duration="46546000" />
+      <workItem from="1608560910584" duration="53533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46546000" />
+    <option name="totallyTimeSpent" value="53533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19597316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19597316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -221,7 +210,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04255319" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47801417" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CountingBits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/BinaryTreeInorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -411,8 +393,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/BinaryTreeLevelOrderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
+        <state relative-caret-position="608">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CountingBits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AdditiveNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/N과M1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
