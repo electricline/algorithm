@@ -20,29 +20,31 @@ public class PacificAtlanticWaterFlow {
         public List<List<Integer>> pacificAtlantic(int[][] matrix) {
 
             check = new boolean[matrix.length][matrix[0].length];
-
+            List<List<Integer>> res = new ArrayList<>();
             for(int i=0; i<matrix.length; i++){
                 for(int j=0; j<matrix[0].length; j++){
                     if(check[i][j]) continue;
-                    searchPacific(matrix, i, j, check);
+                    if(searchPacific(matrix, i, j, check)){
+                        List<Integer> list = new ArrayList<>();
+                        list.add(i); list.add(j);
+                        res.add(list);
+                    }
                 }
             }
-
-            List<List<Integer>> res = new ArrayList<>();
-
-            for(int i=0; i<check.length; i++){
-                for(int j=0; j<check[0].length; j++){
-                    if(!check[i][j]) continue;
-                    List<Integer> list = new ArrayList<>();
-                    list.add(i); list.add(j);
-                    res.add(list);
-                }
-            }
+//
+//            for(int i=0; i<check.length; i++){
+//                for(int j=0; j<check[0].length; j++){
+//                    if(!check[i][j]) continue;
+//                    List<Integer> list = new ArrayList<>();
+//                    list.add(i); list.add(j);
+//                    res.add(list);
+//                }
+//            }
 
             return res;
         }
 
-        private void searchPacific(int[][] matrix, int row, int col, boolean[][] check) {
+        private boolean searchPacific(int[][] matrix, int row, int col, boolean[][] check) {
             visitied = new boolean[matrix.length][matrix[0].length];
             Queue<pair> q = new LinkedList<>();
             q.add(new pair(row,col));
@@ -52,19 +54,8 @@ public class PacificAtlanticWaterFlow {
 
                 pair cur = q.poll();
 
-                if(pacificVisitied && atlanticVisitied){
-                    for(int i=0; i<check.length; i++){
-                        for(int j=0; j<check[0].length; j++){
-                            if(!visitied[i][j]) continue;
-                            if(check[i][j]) continue;
-                            check[i][j] = visitied[i][j];
-                        }
-                    }
-                    return;
-                }
-
                 if(cur.r == 0 || cur.c == 0) pacificVisitied = true;
-                if(cur.r == matrix[0].length || cur.c == matrix.length) atlanticVisitied = true;
+                if(cur.r == matrix[0].length-1 || cur.c == matrix.length-1) atlanticVisitied = true;
 
 
                 for(int dir=0; dir<4; dir++){
@@ -77,8 +68,14 @@ public class PacificAtlanticWaterFlow {
                     q.add(new pair(nr,nc));
                     visitied[nr][nc] = true;
                 }
+                
+                if(pacificVisitied && atlanticVisitied){
+                    return true;
+                }
 
             }
+
+            return false;
 
         }
     }
