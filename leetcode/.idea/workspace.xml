@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MaximumPointsYouCanObtainfromCards$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MaximumPointsYouCanObtainfromCards$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/MinStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/N과M1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/N과M1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +18,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/N과M1.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/PacificAtlanticWaterFlow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="190">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +66,7 @@
         <option value="$PROJECT_DIR$/src/com/company/BinaryTreeLevelOrderTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/company/AdditiveNumber.java" />
         <option value="$PROJECT_DIR$/src/com/company/N과M1.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PacificAtlanticWaterFlow.java" />
       </list>
     </option>
   </component>
@@ -126,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.N과M1">
+  <component name="RunManager" selected="Application.PacificAtlanticWaterFlow">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="leetcode" />
@@ -139,6 +139,19 @@
     </configuration>
     <configuration name="N과M1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.N과M1" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacificAtlanticWaterFlow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.PacificAtlanticWaterFlow" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -167,9 +180,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.test1" />
       <item itemvalue="Application.N과M1" />
+      <item itemvalue="Application.PacificAtlanticWaterFlow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PacificAtlanticWaterFlow" />
         <item itemvalue="Application.N과M1" />
         <item itemvalue="Application.test1" />
       </list>
@@ -185,22 +200,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608560906756</updated>
-      <workItem from="1608560910584" duration="53533000" />
+      <workItem from="1608560910584" duration="58604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53533000" />
+    <option name="totallyTimeSpent" value="58604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19597316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22885907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -414,8 +430,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/N과M1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="106">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PacificAtlanticWaterFlow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

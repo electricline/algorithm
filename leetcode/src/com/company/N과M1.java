@@ -21,7 +21,7 @@ public class N과M1 {
     private static void DFS(int depth) {
 
         if(depth == M){
-            for(int i=0; i<M; i++){
+            for(int i=0; i<10; i++){
                 System.out.print(arr[i] + " ");
             }
             System.out.println();
