@@ -68,7 +68,7 @@ public class PacificAtlanticWaterFlow {
                     q.add(new pair(nr,nc));
                     visitied[nr][nc] = true;
                 }
-                
+
                 if(pacificVisitied && atlanticVisitied){
                     return true;
                 }
