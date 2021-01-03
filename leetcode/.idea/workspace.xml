@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/PacificAtlanticWaterFlow$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/PacificAtlanticWaterFlow$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/com/company/PacificAtlanticWaterFlow$pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/com/company/PacificAtlanticWaterFlow$pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LetterCombinationsofaPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LetterCombinationsofaPhoneNumber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +29,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/LetterCombinationsofaPhoneNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="348">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/DecodeString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/com/company/PacificAtlanticWaterFlow.java" />
         <option value="$PROJECT_DIR$/src/com/company/AdditiveNumber.java" />
         <option value="$PROJECT_DIR$/src/com/company/LetterCombinationsofaPhoneNumber.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DecodeString.java" />
       </list>
     </option>
   </component>
@@ -249,12 +260,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608560906756</updated>
-      <workItem from="1608560910584" duration="74808000" />
+      <workItem from="1608560910584" duration="77548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74808000" />
+    <option name="totallyTimeSpent" value="77548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -500,8 +511,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/LetterCombinationsofaPhoneNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="348">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DecodeString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

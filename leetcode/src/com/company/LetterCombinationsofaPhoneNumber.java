@@ -39,7 +39,7 @@ public class LetterCombinationsofaPhoneNumber {
             String letters = phone.get(digit);
 
             for(int i=0; i<letters.length(); i++){
-                String letter = phone.get(i).substring(i,i+1);
+                String letter = phone.get(digit).substring(i,i+1);
                 backtrack(comb+letter, next_digits.substring(1));
             }
 
