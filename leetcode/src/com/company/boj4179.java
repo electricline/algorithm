@@ -12,8 +12,12 @@ public class boj4179 {
 
     static int R, C, SR, SC;
     static int[][] map;
-    static int[][] tempMap;
+    static int time = 0;
+    static int flag = -1;
     static boolean[][] visitied;
+    static Queue<Integer> q = new LinkedList<>();
+    static Queue<Integer> fq = new LinkedList<>();
+
     static int[] dr = {-1,1,0,0};
     static int[] dc = {0,0,-1,1};
     public static void main(String[] args) throws IOException {
@@ -25,73 +29,54 @@ public class boj4179 {
 
     private static void BFS() {
 
-        Queue<Integer> q = new LinkedList<>();
-        q.add(SR); q.add(SC); q.add(1);
-        visitied[SR][SC] = true;
-        int fireFlag = 0;
-        while(!q.isEmpty()){
+        loop : while(!q.isEmpty()){
 
-            int r = q.poll(); int c = q.poll(); int time = q.poll();
+            spreadFire();
+            int size = q.size();
 
-//            System.out.println("cur r " + r + " cur c " + c + " time " + time);
+            for (int i = 0; i < size/2; i++) {
+                int cur_r = q.poll();
+                int cur_c = q.poll();
 
-            if(fireFlag != time){
-                spreadFire();
-                fireFlag = time;
-            }
+                for (int dir = 0; dir < 4; dir++) {
+                    int nr = cur_r + dr[dir];
+                    int nc = cur_c + dc[dir];
 
-            for(int dir=0; dir<4; dir++){
-                int nr = r + dr[dir];
-                int nc = c + dc[dir];
-//                System.out.println(nr +" " + nc);
+                    if( nr < 0 || nr >= R || nc <  0 || nc >= C){
+                        flag = ++time;
+                        break loop;
+                    }
 
-                if(nr<0 || nr >=R || nc < 0 || nc>=C) continue;
-                if(visitied[nr][nc]) continue;
-                if(map[nr][nc] == 9 || map[nr][nc] == 2) continue;
-
-                if(nr == 0 || nr == R-1 || nc == 0 || nc == C-1){
-                    System.out.println(time+1);
-                    return;
+                    if(visitied[nr][nc] || map[nr][nc] != 0)
+                        continue;
+                    visitied[nr][nc] = true;
+                    q.add(nr); q.add(nc);
                 }
-
-                q.add(nr); q.add(nc); q.add(time+1);
-                map[nr][nc] = 1;
-                visitied[nr][nc] = true;
             }
-
+            time++;
         }
 
-        System.out.println("IMPOSSIBLE");
+        System.out.println(flag == -1 ? "IMPOSSIBLE" : flag);
     }
+
 
     private static void spreadFire(){
 
-        Queue<Integer> fireQ = new LinkedList<>();
+        int fireSize = fq.size();
 
-        for(int i=0; i<R; i++){
-            for(int j=0; j<C; j++){
-                if(map[i][j] == 2){
-                    fireQ.add(i);
-                    fireQ.add(j);
-                }
-            }
-        }
+        for(int i=0; i<fireSize/2; i++){
+            int fr = fq.poll(); int fc = fq.poll();
+            for (int dir = 0; dir < 4; dir++) {
+                int nr = fr + dr[dir];
+                int nc = fc + dc[dir];
 
-        while (!fireQ.isEmpty()){
+                if( nr < 0 || nr >= R || nc <  0 || nc >= C) continue;
+                if(map[nr][nc] != 0) continue;
 
-            int r = fireQ.poll(); int c = fireQ.poll();
-
-            for(int dir=0; dir<4; dir++){
-                int nr = r+dr[dir];
-                int nc = c+dc[dir];
-
-                if(nr<0 || nr >=R || nc < 0 || nc>=C) continue;
-                if(map[nr][nc] == 9 || map[nr][nc] == 2) continue;
                 map[nr][nc] = 2;
-                visitied[nr][nc] = true;
+                fq.add(nr); fq.add(nc);
             }
         }
-
 
 //        System.out.println("=======FIRE=============");
 //        for(int i=0; i<R; i++){
@@ -121,9 +106,12 @@ public class boj4179 {
                 if(str.charAt(j) == 'J'){
                     map[i][j] = 1;
                     SR = i; SC = j;
+                    q.add(i); q.add(j);
+                    visitied[i][j] = true;
                 }
                 if(str.charAt(j) == 'F'){
                     map[i][j] = 2;
+                    fq.add(i); fq.add(j);
                     visitied[i][j] = true;
                 }
             }
