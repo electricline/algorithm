@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/FindtheTownJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/FindtheTownJudge.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +18,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/FindtheTownJudge.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/CourseSchedule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="63">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/com/company/FirstBadVersion.java" />
         <option value="$PROJECT_DIR$/src/com/company/MinimumAbsoluteDifferenceinBST.java" />
         <option value="$PROJECT_DIR$/src/com/company/FindtheTownJudge.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CourseSchedule.java" />
       </list>
     </option>
   </component>
@@ -95,8 +100,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.boj4179">
+  <component name="RunManager" selected="Application.CourseSchedule">
     <configuration name="AdditiveNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.AdditiveNumber" />
       <module name="leetcode" />
@@ -154,8 +159,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N과M1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.N과M1" />
+    <configuration name="CourseSchedule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.CourseSchedule" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -207,19 +212,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.N과M1" />
       <item itemvalue="Application.PacificAtlanticWaterFlow" />
       <item itemvalue="Application.AdditiveNumber" />
       <item itemvalue="Application.boj1254" />
       <item itemvalue="Application.boj4179" />
+      <item itemvalue="Application.CourseSchedule" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseSchedule" />
         <item itemvalue="Application.boj4179" />
         <item itemvalue="Application.boj1254" />
         <item itemvalue="Application.AdditiveNumber" />
         <item itemvalue="Application.PacificAtlanticWaterFlow" />
-        <item itemvalue="Application.N과M1" />
       </list>
     </recent_temporary>
   </component>
@@ -238,18 +243,19 @@
       <workItem from="1609771685452" duration="19745000" />
       <workItem from="1610203260214" duration="6865000" />
       <workItem from="1610374475324" duration="2185000" />
-      <workItem from="1610460423693" duration="1394000" />
+      <workItem from="1610460423693" duration="2024000" />
+      <workItem from="1610544226761" duration="8525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113690000" />
+    <option name="totallyTimeSpent" value="122845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.23557048" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -258,14 +264,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49530202" weight="0.43546098" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49463087" visible="true" weight="0.43546098" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49731544" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.504698" side_tool="true" visible="true" weight="0.43546098" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5053691" side_tool="true" visible="true" weight="0.43546098" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -551,8 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/FindtheTownJudge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="311">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CourseSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
