@@ -26,13 +26,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/CourseScheduleByBFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="152">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/OnlineStockSpan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/com/company/FindtheTownJudge.java" />
         <option value="$PROJECT_DIR$/src/com/company/CourseSchedule.java" />
         <option value="$PROJECT_DIR$/src/com/company/CourseScheduleByBFS.java" />
+        <option value="$PROJECT_DIR$/src/com/company/OnlineStockSpan.java" />
       </list>
     </option>
   </component>
@@ -254,12 +268,12 @@
       <workItem from="1610203260214" duration="6865000" />
       <workItem from="1610374475324" duration="2185000" />
       <workItem from="1610460423693" duration="2024000" />
-      <workItem from="1610544226761" duration="9370000" />
+      <workItem from="1610544226761" duration="12187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123690000" />
+    <option name="totallyTimeSpent" value="126507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -584,10 +598,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/CourseScheduleByBFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="152">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/OnlineStockSpan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
           </folding>
         </state>
       </provider>
