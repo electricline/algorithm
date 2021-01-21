@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TopKFrequentElements.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,15 +17,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/KthSmallestElementinaBST.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/PalindromeLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="978">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/PalindromicSubstrings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/ProductofArrayExceptSelf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -64,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/com/company/EvaluateDivision.java" />
         <option value="$PROJECT_DIR$/src/com/company/EvaluateDivision2.java" />
         <option value="$PROJECT_DIR$/src/com/company/IntersectionofTwoLinkedLists.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PalindromeLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/company/MaximumPointsYouCanObtainfromCards.java" />
         <option value="$PROJECT_DIR$/src/com/company/CountingBits.java" />
         <option value="$PROJECT_DIR$/src/com/company/BinaryTreeInorderTraversal.java" />
@@ -96,6 +114,10 @@
         <option value="$PROJECT_DIR$/src/com/company/SortColors.java" />
         <option value="$PROJECT_DIR$/src/com/company/DailyTemperatures.java" />
         <option value="$PROJECT_DIR$/src/com/company/KthSmallestElementinaBST.java" />
+        <option value="$PROJECT_DIR$/src/com/company/TopKFrequentElements.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PalindromeLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PalindromicSubstrings.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ProductofArrayExceptSelf.java" />
       </list>
     </option>
   </component>
@@ -113,7 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,14 +165,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../core/kb_branch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../core/springboot-itarticle-master/springboot-itarticle" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -269,16 +291,17 @@
       <workItem from="1610943252644" duration="7367000" />
       <workItem from="1611017111409" duration="2951000" />
       <workItem from="1611150907743" duration="1588000" />
+      <workItem from="1611158692024" duration="7036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149592000" />
+    <option name="totallyTimeSpent" value="156628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.23557048" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -399,7 +422,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/EvaluateDivision2.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/PalindromeLinkedList.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/IntersectionofTwoLinkedLists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -668,6 +690,38 @@
             <element signature="e#256#257#0" expanded="true" />
             <element signature="e#294#295#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TopKFrequentElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PalindromeLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="978">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PalindromicSubstrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ProductofArrayExceptSelf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
