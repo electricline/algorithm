@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="">
+    <list default="true" id="bbb5f88c-67a8-44b2-88f1-9fd13d2e80ab" name="Default Changelist" comment="20210124, leetcode, success, graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,13 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/NumberofIslands.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/GroupAnagrams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -48,8 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/PartitionLabels.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PartionLabels2.java" />
         <option value="$PROJECT_DIR$/src/com/company/PartionLabels3.java" />
         <option value="$PROJECT_DIR$/src/com/company/MergeTwoSortedLists.java" />
         <option value="$PROJECT_DIR$/src/com/company/BestTimetoBuyandSellStock.java" />
@@ -99,6 +94,8 @@
         <option value="$PROJECT_DIR$/src/com/company/PalindromicSubstrings.java" />
         <option value="$PROJECT_DIR$/src/com/company/ProductofArrayExceptSelf.java" />
         <option value="$PROJECT_DIR$/src/com/company/NumberofIslands.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CloneGraph.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GroupAnagrams.java" />
       </list>
     </option>
   </component>
@@ -116,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -147,6 +143,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,7 +271,9 @@
       <workItem from="1611150907743" duration="1588000" />
       <workItem from="1611158692024" duration="7036000" />
       <workItem from="1611237458511" duration="2502000" />
-      <workItem from="1611417697528" duration="1879000" />
+      <workItem from="1611417697528" duration="5907000" />
+      <workItem from="1611464784562" duration="1112000" />
+      <workItem from="1611466478728" duration="3326000" />
     </task>
     <task id="LOCAL-00001" summary="20210121, leetcode, success, 구현">
       <created>1611237580639</created>
@@ -297,17 +296,31 @@
       <option name="project" value="LOCAL" />
       <updated>1611237630849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20210124, leetcode, success, bfs">
+      <created>1611419614222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419614222</updated>
+    </task>
+    <task id="LOCAL-00005" summary="20210124, leetcode, success, graph">
+      <created>1611421210493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611421210493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161009000" />
+    <option name="totallyTimeSpent" value="169475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2785235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49748743" visible="true" weight="0.2865772" />
       <window_info id="Structure" order="1" sideWeight="0.5025126" side_tool="true" weight="0.23557048" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -345,29 +358,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20210121, leetcode, success, 구현" />
     <MESSAGE value="20210121, leetcode, success, brute force" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210121, leetcode, success, brute force" />
+    <MESSAGE value="20210124, leetcode, success, bfs" />
+    <MESSAGE value="20210124, leetcode, success, graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210124, leetcode, success, graph" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/PartitionLabels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PartionLabels2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PartionLabels3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -735,13 +730,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CloneGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/NumberofIslands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="-9">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GroupAnagrams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
