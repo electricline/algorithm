@@ -6,7 +6,7 @@ public class boj9461 {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        int[] dp = new int[101];
+        long[] dp = new long[101];
         dp[1] = 1;
         dp[2] = 1;
         dp[3] = 1;
