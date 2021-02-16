@@ -35,7 +35,8 @@ public class boj10816 {
         int r = arr.length;
 
         while(l<r){
-            int mid = (l+r)/2;
+
+            int mid =(l+r)/2;
 
             if(arr[mid] >= num){
                 r = mid;
@@ -51,14 +52,19 @@ public class boj10816 {
         int r = arr.length;
 
         while(l<r){
+
             int mid = (l+r)/2;
+
             if(arr[mid] <= num){
                 l = mid + 1;
             } else {
                 r = mid;
             }
+
         }
+
         return l;
+
     }
 
     private static void binarySearch(int num) {
