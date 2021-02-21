@@ -14,7 +14,6 @@ public class boj2023 {
         }
 
         makeSosuArray(num);
-
         for(int i=num/10; i<num; i++){
             if(sosu[i]){
                 dfs(String.valueOf(i), n);
