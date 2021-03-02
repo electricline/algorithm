@@ -30,15 +30,9 @@ public class boj20055 {
 
         while(true){
             res++;
-            System.out.println("rotation");
             rotationBelt();
-            printArr();
-            System.out.println("move Robot");
             moveRobot();
-            printArr();
-            System.out.println("First robot");
             firstRobotCheck();
-            printArr();
             if(check() >= k){
                 System.out.println(res);
                 return;
@@ -46,16 +40,6 @@ public class boj20055 {
         }
 
 
-    }
-
-    private static void printArr() {
-
-        System.out.println("belt ===========");
-        for(int i=1; i<=2*n; i++){
-            System.out.print(belt[i] + " ");
-        }
-        System.out.println();
-        System.out.println("belt ===========");
     }
 
     private static int check() {
@@ -82,7 +66,10 @@ public class boj20055 {
 
         while(!pq.isEmpty()){
             robot cur_robot = pq.poll();
-            if(cur_robot.idx == 2*n && !robot[1] && belt[1] > 0) {
+            if(cur_robot.idx == n-1 && !robot[n] && belt[n] > 0){
+                robot[cur_robot.idx] = false;
+                belt[n] -= 1;
+            } else if(cur_robot.idx == 2*n && !robot[1] && belt[1] > 0) {
                 robot[cur_robot.idx] = false;
                 robot[1] = true;
                 belt[1] -= 1;
@@ -126,7 +113,9 @@ public class boj20055 {
         while(!pq.isEmpty()){
             robot cur_robot = pq.poll();
 
-            if(cur_robot.idx == 2*n){
+            if(cur_robot.idx == n-1){
+                robot[cur_robot.idx] = false;
+            } else if(cur_robot.idx == 2*n){
                 robot[2*n] = false;
                 robot[1] = true;
                 temp_list.add(1);
@@ -157,11 +146,11 @@ public class boj20055 {
         @Override
         public int compareTo(boj20055.robot o) {
             if(this.rank - o.rank > 0){
-                return -1;
+                return 1;
             } else if(this.rank == o.rank){
                 return 0;
             } else {
-                return 1;
+                return -1;
             }
         }
     }
