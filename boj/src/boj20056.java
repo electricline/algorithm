@@ -4,18 +4,26 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class boj20056 {
+
+    static int[] dy = {-1,-1,0,1,1,1,0,-1};
+    static int[] dx = {0,1,1,1,0,-1,-1,-1};
     static int n, m, k;
-    static int[][] map;
-    static int[][] tempMap;
-    static Map<Integer, List<fireball>> fireballTempMap;
-    static Map<Integer, List<fireball>> fireballMap = new HashMap<>();
+    static int[][] fireBall;
+    static ArrayList<fire>[][] map;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
         k = Integer.parseInt(st.nextToken());
-        map = new int[n+1][n+1];
+        map = new ArrayList[n+1][n+1];
+
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                map[i][j] = new ArrayList<>();
+            }
+        }
+
 
         for(int i=0; i<m; i++){
             st = new StringTokenizer(br.readLine());
@@ -24,35 +32,21 @@ public class boj20056 {
             int m = Integer.parseInt(st.nextToken());
             int s = Integer.parseInt(st.nextToken());
             int d = Integer.parseInt(st.nextToken());
-            String row = Integer.toString(r);
-            String col = Integer.toString(c);
-
-            map[r][c] += 1;
-            if(!fireballMap.containsKey(Integer.parseInt(row+col))){
-                fireballMap.put(Integer.valueOf(row+col), new ArrayList<>());
-            }
-            fireballMap.get(Integer.parseInt(row+col)).add(new fireball(r,c,m,s,d));
+            map[r][c].add(new fire(r,c,m,s,d));
         }
 
-        // k번 이동 후 종료
-        while(k-- > 0) {
-            fireballMove();
-            moreThanTwo();
+        while(k-- >0){
+            move();
+            findTwoMoreFire();
         }
 
         int res = 0;
 
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
-                if(map[i][j]>=1){
-                    String temp = Integer.toString(i);
-                    String temp2 = Integer.toString(j);
-                    String key = temp+temp2;
-                    List<fireball> list = fireballMap.get(Integer.parseInt(key));
-
-                    for(fireball f: list){
-                        res += f.m;
-                    }
+                if(map[i][j].size() == 0) continue;
+                for(fire f : map[i][j]){
+                    res += f.m;
                 }
             }
         }
@@ -61,204 +55,98 @@ public class boj20056 {
 
     }
 
-    private static void moreThanTwo() {
+    private static void findTwoMoreFire() {
 
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
-                if(map[i][j] >= 2){
-                    sum(i,j);
+                if(map[i][j].size() < 2) continue;
+
+                int sum_m = 0;
+                int sum_s = 0;
+                int odd = 0;
+                int even = 0;
+                for(fire f : map[i][j]){
+                    sum_m += f.m;
+                    sum_s += f.s;
+                    if(f.d % 2 == 0) even++;
+                    else odd++;
                 }
+
+                sum_m = sum_m/5;
+                sum_s /= map[i][j].size();
+                map[i][j].clear();
+
+                if(sum_m != 0){
+
+                    if(even == 0 || odd == 0){
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 0));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 2));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 4));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 6));
+                    } else {
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 1));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 3));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 5));
+                        map[i][j].add(new fire(i,j, sum_m, sum_s, 7));
+                    }
+
+
+                }
+
+
             }
         }
 
-
     }
 
-    private static void sum(int row, int col) {
+    private static void move() {
 
-        String r = Integer.toString(row); String c = Integer.toString(col);
-        String key = r+c;
-        List<fireball> list = fireballMap.get(Integer.parseInt(key));
-
-        int cur_m = 0;
-        int cur_s = 0;
-        boolean odd = false;
-        boolean even = false;
-        for(int i=0; i<list.size(); i++){
-            cur_m += list.get(i).m;
-            cur_s += list.get(i).s;
-            if(list.get(i).d % 2 == 0){
-                even = true;
-            } else {
-                odd = true;
-            }
-        }
-        List<fireball> tempList = new ArrayList<>();
-        cur_m = cur_m/5;
-        cur_s = cur_s/map[row][col];
-        if(cur_m == 0){
-            map[row][col] = 0;
-            fireballMap.put(Integer.valueOf(key), tempList);
-            return;
-        }
-        if(odd && even){
-            tempList.add(new fireball(row,col,cur_m,cur_s,1));
-            tempList.add(new fireball(row,col,cur_m,cur_s,3));
-            tempList.add(new fireball(row,col,cur_m,cur_s,5));
-            tempList.add(new fireball(row,col,cur_m,cur_s,7));
-        } else {
-            tempList.add(new fireball(row,col,cur_m,cur_s,0));
-            tempList.add(new fireball(row,col,cur_m,cur_s,2));
-            tempList.add(new fireball(row,col,cur_m,cur_s,4));
-            tempList.add(new fireball(row,col,cur_m,cur_s,6));
-        }
-        map[row][col] = 4;
-        fireballMap.put(Integer.valueOf(key), tempList);
-
-    }
-
-    private static void fireballMove() {
-
-        tempMap = new int[n+1][n+1];
+        List<fire> temp = new ArrayList<>();
 
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
-                tempMap[i][j] = 0;
-            }
-        }
-        fireballTempMap = new HashMap<>();
+                if(map[i][j].size() == 0) continue;
+                List<fire> fires = map[i][j];
+                for(fire f : fires){
 
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n; j++){
-                if(map[i][j] >= 1){
-                    move(i,j);
+                    int nr = f.r + dy[f.d]*f.s % n;
+                    int nc = f.c + dx[f.d]*f.s % n;
+
+                    if(nr > n) {
+                        nr = nr % n;
+                    }
+                    else if(nr < 1) {
+                        nr = n - (Math.abs(nr) % n);
+                    }
+
+                    if(nc > n) {
+                        nc = nc % n;
+                    }
+                    else if(nc < 1) {
+                        nc = n - (Math.abs(nc) % n);
+                    }
+
+
+                    temp.add(new fire(nr,nc,f.m,f.s,f.d));
                 }
+                map[i][j].clear();
             }
         }
 
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n; j++){
-                map[i][j] = tempMap[i][j];
-            }
-        }
-
-        fireballMap = fireballTempMap;
-
-
-    }
-
-    private static void move(int row, int col) {
-
-        String r = Integer.toString(row); String c = Integer.toString(col);
-        String key = r+c;
-        List<fireball> list = fireballMap.get(Integer.parseInt(key));
-
-        // 새로운 map에다 넣어야 되네 ..
-        for(int i=0; i<list.size(); i++){
-            direction(list.get(i));
+        for(fire f : temp){
+            map[f.r][f.c].add(f);
         }
 
     }
 
-    private static void direction(fireball cur_fire) {
-        int cur_r = cur_fire.r;
-        int cur_c = cur_fire.c;
-        int move_num;
-        if(cur_fire.s > n){
-            move_num = cur_fire.s/n;
-        } else {
-            move_num = cur_fire.s;
-        }
-
-        if(cur_fire.d == 0){
-            for(int i=0; i<move_num; i++){
-                cur_r--;
-                if(cur_r == 0)
-                    cur_r = n;
-            }
-        } else if(cur_fire.d == 1){
-            for(int i=0; i<move_num; i++){
-                cur_r--;
-                cur_c++;
-                if(cur_r < 1){
-                    cur_r = n;
-                }
-                if(cur_c>n){
-                    cur_c = 1;
-                }
-            }
-        } else if(cur_fire.d == 2){
-            for(int i=0; i<move_num; i++){
-                cur_c++;
-                if(cur_c>n){
-                    cur_c = 1;
-                }
-            }
-        } else if(cur_fire.d == 3){
-            for(int i=0; i<move_num; i++){
-                cur_r++;
-                cur_c++;
-                if(cur_r > n || cur_c > n){
-                    if(cur_r > n)
-                        cur_r -=n;
-                    if(cur_c > n)
-                        cur_c -=n;
-                }
-            }
-        } else if(cur_fire.d == 4){
-            for(int i=0; i<move_num; i++){
-                cur_r++;
-                if(cur_r > n){
-                    cur_r = 1;
-                }
-            }
-        } else if(cur_fire.d == 5){
-            for(int i=0; i<move_num; i++){
-                cur_r++;
-                cur_c--;
-                if(cur_r > n || cur_c < 1){
-                    if(cur_r > n)
-                        cur_r = 1;
-                    if(cur_c < 1)
-                        cur_c = n;
-                }
-            }
-        } else if(cur_fire.d == 6){
-            for(int i=0; i<move_num; i++){
-                cur_c--;
-                if(cur_c < 1)
-                    cur_c = n;
-            }
-        } else if(cur_fire.d == 7){
-            for(int i=0; i<move_num; i++){
-                cur_r--;
-                cur_c--;
-                if(cur_r < 1)
-                    cur_r = n;
-                if(cur_c < 1)
-                    cur_c = n;
-            }
-        }
-
-
-        tempMap[cur_r][cur_c] += 1;
-        String row = Integer.toString(cur_r);
-        String col = Integer.toString(cur_c);
-        if(!fireballTempMap.containsKey(Integer.parseInt(row+col))){
-            fireballTempMap.put(Integer.valueOf(row+col), new ArrayList<>());
-        }
-        fireballTempMap.get(Integer.parseInt(row+col)).add(new fireball(cur_r,cur_c,cur_fire.m, cur_fire.s, cur_fire.d));
-    }
-
-    private static class fireball {
-
+    static class fire {
         int r;
         int c;
         int m;
         int s;
         int d;
 
-        fireball(int r, int c, int m, int s, int d){
+        fire(int r, int c, int m, int s, int d){
             this.r = r;
             this.c = c;
             this.m = m;
@@ -267,5 +155,8 @@ public class boj20056 {
         }
 
     }
+
+
+
 
 }
