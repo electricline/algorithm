@@ -30,11 +30,11 @@ public class boj18290 {
         }
 
 
-        dfs(0,0, 0, 0);
+        dfs( 0, 0);
         System.out.println(res);
     }
 
-    private static void dfs(int r, int c, int depth, int sum) {
+    private static void dfs(int depth, int sum) {
 
         if(depth == k){
             res = Math.max(res,sum);
@@ -56,7 +56,7 @@ public class boj18290 {
                 if(flag) continue;
                 if(visitied[i][j]) continue;
                 visitied[i][j] = true;
-                dfs(i,j,depth+1, sum + map[i][j]);
+                dfs(depth+1, sum + map[i][j]);
                 visitied[i][j] = false;
 
             }
